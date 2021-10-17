@@ -70,7 +70,7 @@ export default class View {
   }
 
   updateFilterButtons(route) {
-    query(".filters .selected", null).className = "";
+    query(".filters .selected").className = "";
     query(`.filters [href="#/${route}"]`).className = "selected";
   }
 

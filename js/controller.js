@@ -105,7 +105,7 @@ export default class Controller {
     }
 
     this.store.count((total, active, completed) => {
-      this.view.setItemsLeft(0);
+      this.view.setItemsLeft(total);
       this.view.setClearCompletedButtonVisibility(completed);
 
       this.view.setCompleteAllCheckbox(completed === total);
