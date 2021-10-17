@@ -17,6 +17,7 @@ export default class Controller {
     view.bindToggleAll(this.toggleAll.bind(this));
     this._activeRoute = "";
     this._lastActiveRoute = null;
+    view.addFocus();
     this.getDataFromServer();
   }
 

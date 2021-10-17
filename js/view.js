@@ -24,6 +24,10 @@ export default class View {
     });
   }
 
+  addFocus() {
+    this.$newTodo.focus();
+  }
+
   editItem(target) {
     const listItem = target.parentElement.parentElement;
 
